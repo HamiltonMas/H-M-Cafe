@@ -1,0 +1,50 @@
+/* H&M Cafe Global Brand Styles */
+
+.container .row .header-logo h2 span {
+  color: #ff8243;
+}
+
+.header-logo h2 {
+  font-family: "Poppins", sans-serif;
+  letter-spacing: -0.5px;
+}
+
+/* Ensure all pages share consistent header behavior */
+.site-header .container {
+  display: flex;
+  align-items: center;
+}
+
+.site-header .container .row {
+  width: 100%;
+  align-items: center;
+}
+
+/* Fix for Bootstrap row gutters in fixed header */
+.site-header .row > * {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Active nav state override */
+.main-navigation .menu li a.active-menu,
+.main-navigation .menu li a.active-menu:hover {
+  color: #ff8243;
+  background: #f3f3f5;
+  box-shadow:
+    inset 4px 4px 8px #e2e2e2,
+    inset -4px -4px 8px #ffffff;
+}
+
+/* Utility: prevent horizontal scroll globally */
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Smooth image rendering */
+img {
+  -webkit-user-drag: none;
+  user-select: none;
+}

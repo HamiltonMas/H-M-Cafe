@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>H&M Cafe — Fresh Baked Daily in Venda</title>
+    <meta
+      name="description"
+      content="H&M Cafe in Venda serves fresh-baked koeke, terte, beskuit, and savoury treats. Order online or visit us today."
+    />
+    <meta property="og:title" content="H&M Cafe — Fresh Baked Daily" />
+    <meta
+      property="og:description"
+      content="Koeke, terte, beskuit & savoury platters made fresh every morning."
+    />
+    <meta property="og:type" content="website" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="swiper-bundle.min.css" />
+    <link rel="stylesheet" href="jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="menucss.css" />
+    <link rel="stylesheet" href="new1Style.css" />
+    <link rel="stylesheet" href="cart.css" />
+    <link rel="stylesheet" href="css/features.css" />
+    <link rel="manifest" href="manifest.json" />
+  </head>
+
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-2">
+            <div class="header-logo">
+              <a href="index.html">
+                <h2><span>H&M</span> Cafe</h2>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-10">
+            <div class="main-navigation">
+              <button class="menu-toggle"><span></span><span></span></button>
+              <nav class="header-menu">
+                <ul class="menu food-nav-menu">
+                  <li><a href="index.html" class="active-menu">Home</a></li>
+                  <li><a href="AboutUs.html">About</a></li>
+                  <li><a href="Menu.html">Menu</a></li>
+                  <li><a href="Reservations.html">Reserve</a></li>
+                  <li><a href="Gallery.html">Gallery</a></li>
+                  <li><a href="Orders.html">Orders</a></li>
+                </ul>
+              </nav>
+              <div class="header-right">
+                <form
+                  action="Menu.html"
+                  method="GET"
+                  class="header-search-form for-des"
+                >
+                  <input
+                    type="search"
+                    name="q"
+                    class="form-input"
+                    placeholder="Search dishes..."
+                  />
+                  <button type="submit" aria-label="Search">
+                    <i class="uil uil-search"></i>
+                  </button>
+                </form>
+                <a
+                  href="#"
+                  class="header-btn header-cart"
+                  id="cartBtn"
+                  role="button"
+                  aria-label="Open cart"
+                >
+                  <i class="uil uil-shopping-bag"></i>
+                </a>
+                <a href="Profile.html" class="header-btn" aria-label="Profile">
+                  <i class="uil uil-user-md"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="all">
+      <!-- ========== HERO ========== -->
+      <div class="content">
+        <span class="hero-tag">☕ Freshly Baked in Venda</span>
+        <h2>Start Your Day with H&M Cafe</h2>
+        <p>
+          Koeke, terte, beskuit &amp; savoury treats — made fresh every morning.
+        </p>
+        <div class="hero-cta">
+          <a href="Menu.html" class="btn-primary">
+            <i class="uil uil-shopping-bag"></i> View Menu
+          </a>
+          <a href="AboutUs.html" class="btn-secondary">
+            Learn More <i class="uil uil-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- ========== WHY CHOOSE US ========== -->
+      <section class="why-us">
+        <div class="section-title">
+          <span>Why Choose Us</span>
+          <h2>The <span class="accent">H&M</span> Difference</h2>
+        </div>
+        <div class="why-grid">
+          <div class="why-card">
+            <i class="uil uil-coffee"></i>
+            <h3>Baked Fresh Daily</h3>
+            <p>
+              Every cake, tart and biscuit is prepared the morning it's served.
+            </p>
+          </div>
+          <div class="why-card">
+            <i class="uil uil-leaf"></i>
+            <h3>Locally Sourced</h3>
+            <p>We buy from farmers and suppliers right here in Venda.</p>
+          </div>
+          <div class="why-card">
+            <i class="uil uil-heart"></i>
+            <h3>Made with Love</h3>
+            <p>Family recipes handed down through generations.</p>
+          </div>
+          <div class="why-card">
+            <i class="uil uil-truck"></i>
+            <h3>Fast Pickup</h3>
+            <p>Order ahead — your box is ready when you arrive.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== FEATURED DISHES ========== -->
+      <section class="featured" id="menu">
+        <div class="section-title">
+          <span>Best Sellers</span>
+          <h2>Popular Right Now</h2>
+        </div>
+        <div class="featured-grid">
+          <div class="dish-box text-center">
+            <div class="dist-img">
+              <img src="img/dadelballet.jpg" alt="Dadelballet" loading="lazy" />
+            </div>
+            <div class="dish-rating">5 <i class="uil uil-star"></i></div>
+            <div class="dish-title"><h3 class="h3-title">Dadelballet</h3></div>
+            <div class="dist-bottom-row">
+              <ul>
+                <li><b>R 45</b></li>
+                <li>
+                  <button class="dish-add-btn" aria-label="Add to cart">
+                    <i class="uil uil-plus"></i>
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="dish-box text-center">
+            <div class="dist-img">
+              <img src="img/Hertzoggies.jpg" alt="Hertzoggies" loading="lazy" />
+            </div>
+            <div class="dish-rating">4.8 <i class="uil uil-star"></i></div>
+            <div class="dish-title"><h3 class="h3-title">Hertzoggies</h3></div>
+            <div class="dist-bottom-row">
+              <ul>
+                <li><b>R 72</b></li>
+                <li>
+                  <button class="dish-add-btn" aria-label="Add to cart">
+                    <i class="uil uil-plus"></i>
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="dish-box text-center">
+            <div class="dist-img">
+              <img
+                src="img/ring Vanilla.jpg"
+                alt="Ring Vanilla"
+                loading="lazy"
+              />
+            </div>
+            <div class="dish-rating">4.7 <i class="uil uil-star"></i></div>
+            <div class="dish-title"><h3 class="h3-title">Ring Vanilla</h3></div>
+            <div class="dist-bottom-row">
+              <ul>
+                <li><b>R 100</b></li>
+                <li>
+                  <button class="dish-add-btn" aria-label="Add to cart">
+                    <i class="uil uil-plus"></i>
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="featured-cta">
+          <a href="Menu.html" class="btn-primary">
+            See Full Menu <i class="uil uil-arrow-right"></i>
+          </a>
+        </div>
+      </section>
+
+      <!-- ========== TESTIMONIALS ========== -->
+      <section class="testimonials">
+        <div class="section-title">
+          <span>Testimonials</span>
+          <h2>What Our Customers Say</h2>
+        </div>
+        <div class="testi-grid">
+          <div class="testi-card">
+            <div class="testi-stars">★★★★★</div>
+            <p>
+              "The best melktert I've ever had. You can taste the real milk and
+              cinnamon."
+            </p>
+            <div class="testi-author">
+              <div class="testi-avatar">TM</div>
+              <div>
+                <strong>Thabo M.</strong><br /><small>Local Guide</small>
+              </div>
+            </div>
+          </div>
+          <div class="testi-card">
+            <div class="testi-stars">★★★★★</div>
+            <p>
+              "Ordered a mixed platter for a family gathering — everything
+              disappeared in minutes!"
+            </p>
+            <div class="testi-author">
+              <div class="testi-avatar">NK</div>
+              <div>
+                <strong>Naledi K.</strong><br /><small>Regular Customer</small>
+              </div>
+            </div>
+          </div>
+          <div class="testi-card">
+            <div class="testi-stars">★★★★★</div>
+            <p>
+              "Spek en kaas souttertjies are addictive. Friendly service, fresh
+              food, great value."
+            </p>
+            <div class="testi-author">
+              <div class="testi-avatar">JR</div>
+              <div>
+                <strong>Johan R.</strong><br /><small>Repeat Customer</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== RESERVATION / CTA BANNER ========== -->
+      <section class="cta-banner">
+        <div class="cta-inner">
+          <div class="cta-text">
+            <h2>Ready to Order?</h2>
+            <p>
+              Call us for same-day pickup or walk in and enjoy fresh coffee
+              &amp; koeke.
+            </p>
+          </div>
+          <div class="cta-buttons">
+            <a href="tel:+27272226592" class="btn-primary">
+              <i class="uil uil-phone"></i> Call Now
+            </a>
+            <a href="Menu.html" class="btn-outline"> Order Online </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== CONTACT / OPENING HOURS ========== -->
+      <div class="contact" id="contact">
+        <div class="contact-box">
+          <div class="contact-image">
+            <img src="img/bg-image.png" alt="Cafe interior" loading="lazy" />
+          </div>
+        </div>
+        <div class="contact-box">
+          <h2>Opening Time</h2>
+          <div class="book-table-info">
+            <div class="row align-items-center">
+              <div class="col-lg-4">
+                <div class="table-title text-center">
+                  <h3>Mon – Thu</h3>
+                  <p>9:00 am – 22:00 pm</p>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="call-now text-center">
+                  <i class="uil uil-phone"></i>
+                  <a href="tel:+27-729242639">+27- 729242639</a>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="table-title text-center">
+                  <h3>Fri – Sun</h3>
+                  <p>11:00 am – 20:00 pm</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ========== FOOTER ========== -->
+      <footer class="home-footer">
+        <div class="footer-wrap">
+          <div class="footer-col">
+            <h3><span>H&M</span> Cafe</h3>
+            <p>Fresh-baked treats, koeke and savoury plates — since 2024.</p>
+            <div class="footer-social">
+              <a href="#" aria-label="Facebook"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+              <a href="#" aria-label="Instagram"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="#" aria-label="Twitter"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+              <a href="#" aria-label="YouTube"
+                ><i class="fa-brands fa-youtube"></i
+              ></a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="AboutUs.html">About</a></li>
+              <li><a href="Menu.html">Menu</a></li>
+              <li><a href="Profile.html">Profile</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Contact</h4>
+            <ul>
+              <li><i class="uil uil-map-marker"></i> Madabani, Venda, 0920</li>
+              <li><i class="uil uil-phone"></i> +27 72 226 5926</li>
+              <li>
+                <i class="uil uil-envelope"></i> MasipaHamilton5@gmail.com
+              </li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Newsletter</h4>
+            <p style="font-size: 14px; color: #aaa">
+              Get menu updates &amp; specials.
+            </p>
+            <form
+              class="newsletter"
+              onsubmit="
+                event.preventDefault();
+                alert('Thanks for subscribing!');
+                this.reset();
+              "
+            >
+              <input type="email" placeholder="Your email" required />
+              <button type="submit" aria-label="Subscribe">
+                <i class="uil uil-arrow-right"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 H&M Cafe — All rights reserved.</p>
+        </div>
+      </footer>
+    </section>
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/font-awesome.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/jquery.mixitup.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/parallax.min.js"></script>
+    <script src="js/gsap.min.js"></script>
+    <script src="js/ScrollTrigger.min.js"></script>
+    <script src="js/ScrollToPlugin.min.js"></script>
+    <script src="main.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/features.js"></script>
+    <script src="js/orders.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/pwa.js"></script>
+  </body>
+</html>
